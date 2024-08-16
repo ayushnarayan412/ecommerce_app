@@ -27,11 +27,11 @@ class Profile extends StatelessWidget {
               const SizedBox(
                 height: 30,
               ),
-              profileMenu(const Icon(Icons.person), 'My account'),
+              profileMenu(const Icon(Icons.person), '${FirebaseAuth.instance.currentUser!.displayName}'),
               const SizedBox(
                 height: 30,
               ),
-              profileMenu(const Icon(Icons.notifications), 'Notification'),
+              profileMenu(const Icon(Icons.email), '${FirebaseAuth.instance.currentUser!.email}'),
               const SizedBox(
                 height: 30,
               ),
